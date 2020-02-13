@@ -5,8 +5,8 @@ console.log("sup dude");
 
 // Reset btn
 let reset = document.getElementById("reset");
-reset.addEventListener("click", function() {
-    console.log("this is the reset btn");
+reset.addEventListener("click", function(event){
+    playAgain(event.target.className);
 })
 
 //Scores
@@ -47,85 +47,71 @@ function computerPick() {
 function playerPick(choice) {
     let computerPicks = computerPick();
     // Winning Combos
+    //choices for rock
     if (choice == "rock" && computerPicks == "paper") {
-        console.log('You picked Rock and CPU picked Paper: You Lose IDK how'); 
+        result.innerHTML = 'You picked Rock and CPU picked Paper: You Lose IDK how'; 
         // computer ++
         computerPoints++;
+
     }   if (choice == "rock" && computerPicks == "scissors") {
-        console.log('You picked Rock and CPU picked Scissors: You Win'); 
+        result.innerHTML = 'You picked Rock and CPU picked Scissors: You Win'; 
         // player ++
         playerPoints++;
+
     }   if (choice == "rock" && computerPicks == "rock") {
-        console.log('You picked Rock and CPU picked Rock: DRAW');
+        result.innerHTML = 'You picked Rock and CPU picked Rock: DRAW';
     } 
+    
+    // choices for paper
     if (choice == "paper" && computerPicks == "rock") {
-        console.log('You picked Paper and CPU picked Rock: You Win somehow'); 
+        result.innerHTML = 'You picked Paper and CPU picked Rock: You Win somehow'; 
         //player ++
         playerPoints++;
+
     }   if (choice == "paper" && computerPicks == "paper") {
-        console.log('You picked paper and CPU picked paper: DRAW');
+        result.innerHTML = 'You picked paper and CPU picked paper: DRAW';
+
     }   if (choice == "paper" && computerPicks == "scissors") {
-        console.log('You picked Paper and CPU picked Scissors: You Lose'); 
+        result.innerHTML = 'You picked Paper and CPU picked Scissors: You Lose'; 
         // computer ++
         computerPoints++;
     } 
+    
+    // choices for scissors
     if (choice == "scissors" && computerPicks == "rock") {
-        console.log('You picked Scissors and CPU picked rock: You Lose');
+        result.innerHTML = 'You picked Scissors and CPU picked rock: You Lose';
         // computer ++
         computerPoints++;
+
     }   if (choice == "scissors" && computerPicks == "paper") {
-        console.log('You picked Scissors and CPU picked Paper: You Win'); 
+        result.innerHTML = 'You picked Scissors and CPU picked Paper: You Win'; 
         // player ++
         playerPoints++;
+
     }   if (choice == "scissors" && computerPicks == "scissors") {
-        console.log('You picked Scissors and CPU picked Scissors: DRAW');
+        result.innerHTML = 'You picked Scissors and CPU picked Scissors: DRAW';
     } 
     updateScoreboard();
+    /*
+    restart();
+    */
+
 }
 
-
-// Win
-/*function win() {
-    
-}
-
-// Lose
-function lose() {
-    computerPoints++; 
-     
-}
-*/
 // Scoreboard function
 function updateScoreboard() {
     playerScore.innerHTML = playerPoints;
     computerScore.innerHTML = computerPoints;
 }
 
-
-// Winning combos 
-    //if player picks rock:
-        //and comp picks paper
-            //lose
-        //and comp picks scissors
-            //win
-        //and comp picks rock
-            //draw
-
-    //if player picks paper:
-        //and comp picks rock
-            //win
-        //and comp picks scissos
-            //lose
-        //and comp picks paper
-            //draw
-    // if player picks scissors:
-        //and comp picks rock
-            //lose
-        //and comp picks paper
-            //win
-        //and comp picks scissors
-            //draw
-
 // best of 3 or first to 2 win
 
 // go again?
+/*
+let playAgain = restart;
+function restart() {
+    if (playerPoints || computerPoints >= 2) {
+        return playerPick();
+    }
+}
+*/
