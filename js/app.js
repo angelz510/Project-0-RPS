@@ -102,10 +102,13 @@ function updateScoreboard() {
 }
 
 // best of 3 or first to 2 win
-let victory = 0;
-for (i = 0; playerPoints && computerPoints <=2; i++) {
-    return gameReset;
+if (computerPoints > playerPoints) {
+    console.log('lose');
+} else if (playerPoints > computerPoints){
+    console.log('win');
 }
+    
+
 
 
 // go again?
