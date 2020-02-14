@@ -36,9 +36,6 @@ header {
     margin: 25px 0;
 }
 
-
-
-
 .reset {
     background-color: orange;
     border-color: black;
@@ -46,14 +43,9 @@ header {
     color: black;
     font-weight: bold;
     font-size: 20pt;
-
+    margin-left: 70%;
     display: center;
 }
-
-
-
-
-
 
 .move-sign {
     text-align: center;

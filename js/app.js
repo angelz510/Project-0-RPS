@@ -4,13 +4,10 @@ console.log("sup dude");
 // Start btn
 
 // Reset btn
-
 reset = document.getElementById("restart");
 reset.addEventListener("click", function(event) {
     gameReset(event.target.id);
 })
-
-
 
 //Scores
 let playerPoints = 0;
@@ -105,6 +102,11 @@ function updateScoreboard() {
 }
 
 // best of 3 or first to 2 win
+let victory = 0;
+for (i = 0; playerPoints && computerPoints <=2; i++) {
+    return gameReset;
+}
+
 
 // go again?
 
@@ -118,3 +120,7 @@ function gameReset() {
     computerPoints = 0;
     result.innerHTML = '';
 }
+
+
+
+
