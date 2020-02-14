@@ -26,7 +26,7 @@ One of the only unsolved problems is that the game will go on forever instead of
 -Best out of 3!
 
 <h2>Wireframe</h2>
-![project0wireframe](/images/Project0wireframe.jpg)
+![project0wireframe](./images/Project0wireframe.jpg)
 
 <h4>Bugs</h4>
 -Wont end after 3 rounds.

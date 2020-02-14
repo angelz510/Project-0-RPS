@@ -1,7 +1,6 @@
 console.log("sup dude");
 
 // Rock Paper Scissors
-// Start btn
 
 // Reset btn
 reset = document.getElementById("restart");
@@ -41,7 +40,6 @@ function computerPick() {
     let randomPick = Math.floor(Math.random() * 3);
     return picks[randomPick];
 }
-
 
 // Player pick
 function playerPick(choice) {
@@ -107,13 +105,6 @@ if (computerPoints > playerPoints) {
 } else if (playerPoints > computerPoints){
     console.log('win');
 }
-    
-
-
-
-// go again?
-
-
 
 // reset function
 function gameReset() {
