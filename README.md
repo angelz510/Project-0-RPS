@@ -19,14 +19,14 @@ When approaching this game I first broke the game down into the functions I know
 One of the only unsolved problems is that the game will go on forever instead of deciding a winner after a 'best of 3'. 
 
 <h2>How to play:</h2>
--Rock beats scissors
--Scissors beat paper
--Paper beats rock (still dont know why)
--Take your pick and beat the computer.
+-Rock beats scissors<br>
+-Scissors beat paper<br>
+-Paper beats rock (still dont know why)<br>
+-Take your pick and beat the computer.<br>
 -Best out of 3!
 
 <h2>Wireframe</h2>
-![project0wireframe](./images/Project0wireframe.jpg)
+<img src="./images/Project0wireframe.jpg" />
 
 <h4>Bugs</h4>
 -Wont end after 3 rounds.
