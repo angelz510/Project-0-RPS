@@ -4,10 +4,13 @@ console.log("sup dude");
 // Start btn
 
 // Reset btn
-let reset = document.getElementById("reset");
-reset.addEventListener("click", function(event){
-    playAgain(event.target.className);
+
+reset = document.getElementById("restart");
+reset.addEventListener("click", function(event) {
+    gameReset(event.target.id);
 })
+
+
 
 //Scores
 let playerPoints = 0;
@@ -91,10 +94,7 @@ function playerPick(choice) {
     }   if (choice == "scissors" && computerPicks == "scissors") {
         result.innerHTML = 'You picked Scissors and CPU picked Scissors: DRAW';
     } 
-    updateScoreboard();
-    /*
-    restart();
-    */
+    updateScoreboard();    
 
 }
 
@@ -107,11 +107,14 @@ function updateScoreboard() {
 // best of 3 or first to 2 win
 
 // go again?
-/*
-let playAgain = restart;
-function restart() {
-    if (playerPoints || computerPoints >= 2) {
-        return playerPick();
-    }
+
+
+
+// reset function
+function gameReset() {
+    playerPick();
+    updateScoreboard();
+    playerPoints = 0;
+    computerPoints = 0;
+    result.innerHTML = '';
 }
-*/
