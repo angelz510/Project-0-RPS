@@ -23,7 +23,12 @@ One of the only unsolved problems is that the game will go on forever instead of
 -Scissors beat paper<br>
 -Paper beats rock (still dont know why)<br>
 -Take your pick and beat the computer.<br>
--Best out of 3!
+-Best out of 3!<br>
+
+<h3>Play Here:</h3>
+<href="https://pages.git.generalassemb.ly/angelz510/Project-0-Rock-Paper-Scissors/>
+
+
 
 <h2>Wireframe</h2>
 <img src="./images/Project0wireframe.jpg" />
