@@ -26,9 +26,7 @@ One of the only unsolved problems is that the game will go on forever instead of
 -Best out of 3!<br>
 
 <h3>Play Here:</h3>
-<href="https://pages.git.generalassemb.ly/angelz510/Project-0-Rock-Paper-Scissors/>
-
-
+<a href="https://pages.git.generalassemb.ly/angelz510/Project-0-Rock-Paper-Scissors">Rock, Paper, Scissors!</a>
 
 <h2>Wireframe</h2>
 <img src="./images/Project0wireframe.jpg" />
